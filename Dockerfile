@@ -7,7 +7,7 @@ ENV RESOLUTION=1366x768
 WORKDIR /root
 
 RUN apt-get -y update && \
-    apt-get -y install xvfb git wget xz-utils
+    apt-get -y install xvfb git wget xz-utils default-jre
 
 RUN wget https://nodejs.org/dist/v6.9.1/node-v6.9.1-linux-x64.tar.xz && \
     tar -C /usr/local --strip-components 1 -xJf node*tar.xz && \
