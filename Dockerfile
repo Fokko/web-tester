@@ -16,6 +16,8 @@ RUN wget https://nodejs.org/dist/v6.9.1/node-v6.9.1-linux-x64.tar.xz && \
 RUN npm install -g bower && \
     echo '{ "allow_root": true, "gitUseHttps": true }' > ~/.bowerrc && \
     echo "N\n" | bower
+    
+RUN npm install -g polymer-cli
 
 #but in need... we can launch chrome
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
